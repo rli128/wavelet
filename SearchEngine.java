@@ -9,7 +9,7 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Add stuff to the search bar using /add?=s or find out what's in the list using /contents");
+            return String.format("Add stuff to the search bar using /add?s= or find out what's in the list using /contents");
         } else if (url.getPath().equals("/empty")) {
             num = new String[300];
             size = 0;
